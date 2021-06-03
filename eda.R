@@ -40,7 +40,8 @@ country_data %>%
   geom_line(aes(y = en_atm_co2e_pp_gd)) +
   theme_minimal()
 
-# model
+
+# models
 require(tidyr)
 country<-read.csv("config_files/FFG_Hackathon_Country_Level_Data.csv")
 US<-rbind(country[124,],country[255,],country[386,],country[517,],country[517,],country[648,],country[779,],country[910,],country[1041,],country[1172,],country[1303,])
